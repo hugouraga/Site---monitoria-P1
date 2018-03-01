@@ -1,0 +1,215 @@
+/* resetando configuração css para compatibilidade com todos navegadores*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media (){
+
+}
+
+/*fim do reset*/
+/*configurando estilo da barra de navegação*/
+.container-navegador{
+	background-color: rgba(0,0,0,.3);
+}
+.container-navegador .lista-links{
+	width: 100%;
+	text-align: center;
+	z-index: 10;
+}
+.logo{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 50px;
+
+}
+.container-navegador .lista-links li{
+	margin-top: 20px;
+}
+.container-navegador .lista-links li a{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	margin-left:  3px;
+	margin-right: 3px;
+	list-style: none;
+	font-family: "Poppins", Arial;
+	color: white;
+	background-color:  #038EBF;
+	border-radius: 10px;
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif;
+	transition: 1s;
+}
+.container-nagevador .lista-links li{
+	list-style: none;
+}
+.container-navegador .lista-links li a:hover{
+	background-color: #031E29;
+}
+.secao-principal{
+	background: url('imagens/background-page-inicial.jpg');
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+.secao-principal .conteudo{
+	color: white;
+	margin: auto;
+	width: 100%;
+	position: relative;
+}
+.secao-principal h1{
+	margin:  auto;
+	text-align: center;
+	top: 25%;
+	background-color: rgba(0,0,0,.2);
+	font-size: 70px;
+	font-family: 'Francois One', sans-serif;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.secao-sobre{
+	margin: auto;
+	padding-top: 30px;
+	margin-top: 0;
+	background-color: #CCD9CE;
+	margin-bottom: 0;
+	padding-bottom: 30px;
+
+}
+.secao-sobre p{	
+	text-align: justify;
+	text-indent: 35px;
+	padding-top: 20px;
+}
+.secao-aulas{
+	padding-top: 50px;
+	background-color: white;	
+}
+.secao-aulas h2{
+	margin: auto;
+	padding-top: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 30px;
+}
+table{
+	border: 1px solid black;
+}
+.secao-aulas .table-aulas{
+	margin: auto;
+}	
+.secao-aulas .table-aulas tr td{
+	padding-left: 20px;
+	padding-right: 20px;
+	
+}
+.secao-aulas .table-aulas tr th{
+	text-align: center;
+}
+.secao-listas{
+	background-color: white;
+	position: relative;}
+.secao-listas h2{
+	margin: auto;
+	padding-top: 80px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 30px;		
+}
+.secao-listas img{
+	padding-top: 100px;
+	display: block;
+	width: 160px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.secao-monitores{
+	background-color: #0A2940;
+	margin-top: 100px;
+	height: 1700px;
+}
+.secao-monitores h1{
+	background-color: #00E5E2;
+	text-indent: 150px;
+	padding-top:  15px;
+	padding-bottom: 15px;
+}
+.secao-monitores .hugo{
+	margin-top: 40px;
+	display: table;
+	padding-left: 60px;
+}
+.secao-monitores .hugo img{
+	border-radius: 50px;
+	float: left;
+}
+.texto{
+	display: table-cell;
+	float: left;
+	text-align: justify;
+	margin-top: 60px;
+	color : white;
+}
+.secao-fale-conosco{
+	width: 100%;
+}
+.secao-fale-conosco h3{
+	margin-left: 150px;
+	margin-top: 50px;
+}
+.secao-fale-conosco ul li a{
+	display: block;
+	font-size: 20px;
+}
+.secao-fale-conosco .lista-bloco{
+	width: 500px;
+	margin: auto;
+}

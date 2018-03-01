@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Hugo Issao Uraga">
+	<meta name="description" content="Desenvolvimento de uma página web para auxilar nas aos monitorandos de programação 1">
+	
+	<!--link css-->
+	<link rel="stylesheet" href="css/index.css">
+	<!--link bootstrap-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<title>Monitoria P1</title>
+</head>
+<body style="width: 100%;">
+	
+	<header class="container-fluid container-navegador" style="position: fixed; z-index: 2" >
+		<nav class="nav">
+			<div class="col-md-1 col-sm-1 logo">
+				<a href="#"><img src="imagens/logo.png" alt=""></a>
+			</div>
+			<div class="lista-links lista-links-mobile col-md-10">
+				<ul class="lista-ul-mobile">
+					<li class="col-md-12">
+						<a href="#">Início</a>
+						<a href="#sobre">Sobre</a>
+						<a href="#tabela-aulas">Aulas</a>
+						<a href="#listas">Listas</a>
+						<a href="#monitores">Quem somos</a>
+						<a href="#">Fale conosco!</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+
+	<section class="secao-principal" style="background: url('imagens/teste.jpg'); background-size: cover; z-index: -1; background-attachment: fixed; ">
+		<div class="conteudo" style="width: 100%; height: 100vh; background-color: rgba(0,0,0,.7); z-index: 1">
+			<h1 class="col-md-12 col-sm-10">Monitoria <p></p> Programação 1</h1>
+		</div>
+	</section>
+
+	<section class="secao-sobre col-md-12 col-sm-5" id="sobre">
+		<div class="secao-sobre col-md-10">
+			<h2>Sobre a Disciplina</h2>
+			<p>A disciplina de Programação 1 é o primeiro contato dos alunos do curso de Sistemas de Informação com a programação de computadores. Nesta disciplina os alunos aprenderão a utilizar as principais construções disponíveis em todas linguagens de programação aderentes ao paradigma imperativo e como essas construções são úteis para resolver problemas reais no desenvolvimento de software. O curso utiliza a linguagem de programação Python (versão 3+) como ferramenta didática, embora não seja um curso de programação em Python, especificamente. Ao final da disciplina, espera-se que os alunos sejam capazes de construir programas Python não-triviais, explicar o comportamento de um programa Python escrito por outra pessoa, testar e depurar seus programas Python e, de forma mais geral, explicar o funcionamento de programas escritos em outras linguagens imperativas.</p>
+		</div>
+	</section>
+
+	<!--SEÇÃO AULAS-->
+	<section class="secao-aulas" id="tabela-aulas">
+		<div class="col-md-12">
+			<h2 class="col-md-10">Aulas 2018.1</h2>
+			<table class="table-aulas">
+				<tr>
+					<th>Cronograma das aulas</th>
+				</tr>
+				<tr>
+					<td> - Programando em Python - Variáveis e tipos</td>
+				</tr>
+				<tr>
+					<td><a href="https://894c3f08-a-d77e58e2-s-sites.googlegroups.com/a/cin.ufpe.br/if968si/aulas/aula3_%20condicionais%2C%20if-else.pdf?attachauth=ANoY7cp2hNFZVshwfcFeCF4J4uI-_Eib7oLlxGxy0mGak5M2BWfAbKGB7V_mlk93-Nr7lKd7goEwIvONYRAVIbNHILyQaG125pLbQ_MY_MkmQ0Th7J1UYJny7LUB3a3yStpKGNIa59wfRRNuXXE7yW-9x71rk-TZBDfMxAbr72EAMVIcCwzrxV6mJNp1pIZg-qyV05PEEGWO2lcvZ6t_-jD31v2a15e1MCt102BHNOwVImyS_GFzK4E%3D&attredirects=0" target="_blank">- Condicionais - if/else</a></td>
+				</tr>
+				<tr>	
+					<td> - <a href="https://894c3f08-a-d77e58e2-s-sites.googlegroups.com/a/cin.ufpe.br/if968si/aulas/aula3_%20condicionais%2C%20if-else.pdf?attachauth=ANoY7cp2hNFZVshwfcFeCF4J4uI-_Eib7oLlxGxy0mGak5M2BWfAbKGB7V_mlk93-Nr7lKd7goEwIvONYRAVIbNHILyQaG125pLbQ_MY_MkmQ0Th7J1UYJny7LUB3a3yStpKGNIa59wfRRNuXXE7yW-9x71rk-TZBDfMxAbr72EAMVIcCwzrxV6mJNp1pIZg-qyV05PEEGWO2lcvZ6t_-jD31v2a15e1MCt102BHNOwVImyS_GFzK4E%3D&attredirects=0" target="_blank">Exercícios de condicionais</a>, <a href="https://894c3f08-a-d77e58e2-s-sites.googlegroups.com/a/cin.ufpe.br/if968si/aulas/lista1.pdf?attachauth=ANoY7cpy68cUfMjqRLGd25jfHUiO7Tv_okOZiFuTkPZwAxkSNDPIyUlbSCyo0Nw29lNZXRO3A8598CsrIOZKXs85yEpUntJUrdtR6vjitnf0WWKxWrgdRJ0K-vLiJ6BoUa5U5ag-rJtktDISZgw-KR9yY8Y-kzJlRbBQHHVqaKY-_OfFX2BYRlXhfADG2BC7zJjgZfkqILJyuUQhorb_jQ4HChGLZNmzPg%3D%3D&attredirects=0" target="_blank">Lista de exercícios de condicionais</a></td>
+				</tr>
+				<tr>
+					<td>  - <a href="https://894c3f08-a-d77e58e2-s-sites.googlegroups.com/a/cin.ufpe.br/if968si/aulas/05-iteracao_lacos_2.pdf?attachauth=ANoY7cq7SpCKtveNWAtAht-fnA8Lnc2MS89xQeG6aT_heo768H4qPy9wsgFYlw9EvO6JFl0H48d0uGi8es687t-G-LUrh8lw9I-AYi7jp-gqHDnpsqsH5DGi0_xJnbUcUb1W4DCgRrH2cFDfNBLKIBUD6r2ox14GeQTn3QZtzF8uRVD_iDziAYo9yNKOlYujeaqBc_m1gNvdH7ybt9icTh8SC4TmFTfhI65ZficDRGjlzCMoiTJyRis%3D&attredirects=0" target="_blank">Iteração e laços - while</a>, <a href="https://894c3f08-a-d77e58e2-s-sites.googlegroups.com/a/cin.ufpe.br/if968si/aulas/lista2.pdf?attachauth=ANoY7cqgb0qdS6t3VfKI9IjAwylSL3xix7oFoM6EEs_cHxmd9btZ4X3534aCdWv7tz-iGt4moq-Ecq-4RsKFcVp0qFtlHwMmxU1v7TvrKEB9KIRZ5Id7YEToIyUj4EFZERICRS28dHORPFeiYinhxTFReVSnOfsoyDoeEES86PsXBleo14j812p9MtsVmr4zUD1rwKuhnj0kaGLfceRXlLoy8a8qGfUHJg%3D%3D&attredirects=0" target="_blank">Lista de exercícios de laços</a></td>
+				</tr>
+				<tr>
+					<td> <a href="https://894c3f08-a-d77e58e2-s-sites.googlegroups.com/a/cin.ufpe.br/if968si/aulas/aula7_listas.pdf?attachauth=ANoY7cpTThz7RSu0GpuSsyw9qTSCPk5vBRS1RYoqZbhL8CJSbF4lwPzpzEUKVlKzyyAOaXemvYOQWvnpFcsmAObBQYstl8UsT2BZfVDLav9nA17JT3_2XXsC8pPkRWMDynwB7qxxuUqYlEOSbrb5h1nKJXhNZA3CC7RtuynalaVmmh7b-SBTzh2lT55mC1FsKK5x1xdDBo_gdmDkEaRRVFbJwZNrR3ZDcQ%3D%3D&attredirects=0" target="_blank">- Listas</a></td>
+				</tr>
+				<tr>
+					<td><a href="https://894c3f08-a-d77e58e2-s-sites.googlegroups.com/a/cin.ufpe.br/if968si/aulas/aula8-listas_tuplas_for.pdf?attachauth=ANoY7crGckyqvBEcEP4PhLVZkDhTkbVedHW4WG4ShXuFqRVwvo7aBF8M7fNz4s3APnDs-N_A3u4XdUOwhih9kGHD782WKZ2tOKFuynj2YhyYI37ePTZ2TYizNkMN__2OPIdG7w-lkSydk6DpeSpDvlhwxo_PalD8goYrjA5Q0GwJy69ppdo0ONRUkqs7v9j59xtciRCplLve0ugNQ7Zp7F8bGsOa8XB551YLLO-FsNKZUFwVQbp45l4%3D&attredirects=0" target="_blank">- Listas, tuplas e for</a></td>
+				</tr>
+				<tr>
+					<td> <a href="https://894c3f08-a-d77e58e2-s-sites.googlegroups.com/a/cin.ufpe.br/if968si/aulas/aula9-strings.pdf?attachauth=ANoY7cp30Te5wk3DeOLzkPajk0Xv5o9cfTs0Am7iZdFIk8bqG7jL8cu8HWWCJS6VggJviLzSuXJBlmg2mKpR9582W2arBe14-Z2XV1FmxdRU9DAZcqd2vn4MWg_WkI1jljWsEG0I1crRaUFmbif1FFUXdsVpg66Bupav1DTAKp96Ih3M6NiN6LecRCKyAwLRh3vXKIo2ZJTT5GW-q7zYmVUXbEbYQi2FbA%3D%3D&attredirects=0" target="_blank">- String</a></td>
+				</tr>
+				<tr>
+					<td> <a href="https://894c3f08-a-d77e58e2-s-sites.googlegroups.com/a/cin.ufpe.br/if968si/aulas/lista3.pdf?attachauth=ANoY7cpa6SuArU47DcCdxRE5818kP4vtjfPwRSGuYg3dTkCUl2QobUWGl0PTgp86AHrhwGvi1hpK-aIvdeLlkFIz1sbqEKYpER9mkooaObjojALsKtXwpM6CyOTCeP-ZggN55r6cGptZZDHof-2B5vWPTqIO0SwL3hWXKWp7PKozJTytuGqiYXT1hNcbQun3GB4IRt2KxjwYy7FXkK8YH4mTMKLK_BL6tg%3D%3D&attredirects=0" target="_blank">- Lista de exercícios de listas e strings</a></td>
+				</tr>
+				<tr>
+					<td> <a href="https://894c3f08-a-d77e58e2-s-sites.googlegroups.com/a/cin.ufpe.br/if968si/aulas/aula10-funcoes.pdf?attachauth=ANoY7cqqj0B52s4jPhmPV5paJAhe1ldCiqq_M0TK8l8UFhzz7p8KD1KTELz16g4kG-7x0ohEcBFf764D6Tu2D_g3PUAAAk_VTWcn8kdC72FhRe6ymUZCk2b3mKoYKkTRneYodc4f5T7UY26nWCl2gNvoOkjgHhCE5VF0r6UNi8kpO6ff-YDfVf9AL6bq_FVU2qSmnJvqla4jVVSrNvgeZO9VyuJQWb5AoQ%3D%3D&attredirects=0" target="_blank">- Funções</a></td>
+				</tr>
+				<tr>
+					<td><a href="https://894c3f08-a-d77e58e2-s-sites.googlegroups.com/a/cin.ufpe.br/if968si/aulas/aula12_Dicionarios.pdf?attachauth=ANoY7coGyo4TIvexiSJ508rTuJmtIEYrErqx3Hq_KQQpt5eMo0y7GDkIBYKgRxSxLhDX7krLsAHKWurG9HilgyruRPwI1kzKn7PQYtHYy7HGxr-2jH-mCMH7zvK85jbJvm8vaGo3b6iGKXmhCG58yFx-oI4BysmjU_0f4KZM_5volXXXHw4iHOdauY3B1izFV6iXN5MWSXoSCZo-I6XvVPqi61JOYRTwcQnAGsjUps4WnR7-U3wODKE%3D&attredirects=0" target="_blank">- Dicionários</a></td>
+				</tr>
+				<tr>
+					<td><a href="https://894c3f08-a-d77e58e2-s-sites.googlegroups.com/a/cin.ufpe.br/if968si/aulas/aula11_Arquivos.pdf?attachauth=ANoY7crHDYmlZUH4hxc1gIVaOz8kJrRN-thcdZyqOxhFF6kzxfs4ulAqoJvQk5cJvKEsi5UBLurA-khDLlclMoYYheam-sXxLqC8L0BDlO5W71a6yYf1qsIrOhD1PjDnTnmFxsuwk-T3ZRwdLyZ0W_RqPVsJ6ID0lBWjN_4iL27x2GKkfVg5YvVho1X60-5rhydvrwvdJ6M2gB7s5qV_SojgPHd7ES-NRg%3D%3D&attredirects=0" target="_blank">- Arquivos</a></td>
+				</tr>
+				<tr>
+					<td><a href="https://894c3f08-a-d77e58e2-s-sites.googlegroups.com/a/cin.ufpe.br/if968si/aulas/13-Recursao.pdf?attachauth=ANoY7cpokzfxrvUlGY5-FehMZLFV6qinx0xdnV5EvBIletXPTCSkWM1g2ky0ufaDI8Bhirw9lZy89BYhf2SpAX7Y23T2E-gvtbufPgbFtEcCDbnko2WWCtiWkaBk5hjDK9PXemivcIPIa5uDnSR30wubt0CNyl7MdYO9qiE0oJpZzpBx7RY7zbj6zELX0fZeAmKhjs6lnH61pG7VMI9uBbl7uVI956NjwQ%3D%3D&attredirects=0" target="_blank">- Recursão</a>, <a href="https://sites.google.com/a/cin.ufpe.br/if968si/aulas" target="_blank">Resolução das questões do slide</a></td>
+				</tr>
+			</table>
+		</div>
+	</section>
+
+	<section class="secao-listas col-md-12" id="listas">
+		<h2 class="col-md-10">Aguardem - Listas em contrução</h2>
+		<img src="imagens/loading.gif" class="col-md-4" alt="">
+	</section>
+	
+
+	<section class="secao-monitores" id="monitores">
+		<h1>Quem somos?</h1>
+		<div class="hugo col-md-12">
+			<div class="imagem col-md-6">
+				<img src="imagens/hugo(1).jpeg" alt="" style="width: 200px">
+			</div>
+			<div class="texto col-md-9">
+				<h3>Hugo Issao Uraga</h3>
+				<p>Entusiasta de tecnologias web, mobile e desktop. Respiro e sobrevivo da tecnologia. Um autodidata que sonha ser um grande desenvolvedor FullStack. De fato, agarro oportunidades que me traga sucesso academicamente, e que me faça crescer profissionalmente.</p>
+			</div>
+		</div>
+	</section>
+	
+	<section class="secao-fale-conosco">
+		<h3>Tire suas dúvidas com os monitores: </h3>
+		<ul class="container-links-monitores">
+			<li class="lista-bloco">
+				<a href="">Adriano Jorge Braun Vieira Neto (jbvn@cin.ufpe.br)</a>
+				<a href="">Antonio Paulino de Lima Neto (apln2@cin.ufpe.br)</a>
+				<a href="">Carolina Maria de Paiva Melo (cmpm@cin.ufpe.br)</a>
+				<a href="">Danilo da Rocha Lira Araujo (drla@cin.ufpe.br)</a>
+				<a href="">Gabriel Cavalcanti de Melo (gcm2@cin.ufpe.br)</a>
+				<a href="">Hugo Issao Uraga (hiu@cin.ufpe.br)</a>
+				<a href="">Isabela Ribeiro (micr@cin.ufpe.br)</a>
+				<a href="">Ricarth Lima (rrsl@cin.ufpe.br)</a>
+				<a href="">Vitor Cardim Menezes (vcm3@cin.ufpe.br)</a>
+			</li>
+		</ul>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
