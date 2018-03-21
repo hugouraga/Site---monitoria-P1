@@ -7,31 +7,33 @@
 	<meta name="author" content="Hugo Issao Uraga">
 	<meta name="description" content="Desenvolvimento de uma página web para auxilar nas aos monitorandos de programação 1">
 	
-	<!--link css-->
+	<!--link css/js-->
 	<link rel="stylesheet" href="css/index.css">
+	
 	<!--link bootstrap-->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<title>Monitoria P1</title>
 </head>
-<body style="width: 100%;">
+<body style="width: 100%;" id="inicio">
 	
 	<header class="container-fluid container-navegador" style="position: fixed; z-index: 2" >
-		<nav class="nav">
-			<div class="col-md-1 col-sm-1 logo">
+		<nav class="nav .nav-mobile">
+			<div class="col-md-1 col-sm-2 logo">
 				<a href="#"><img src="imagens/logo.png" alt=""></a>
 			</div>
-			<div class="lista-links lista-links-mobile col-md-10">
+			<div class="lista-links lista-links-mobile col-md-10 col-sm-6">
 				<ul class="lista-ul-mobile">
 					<li class="col-md-12">
-						<a href="#">Início</a>
+						<a href="#inicio">Início</a>
 						<a href="#sobre">Sobre</a>
 						<a href="#tabela-aulas">Aulas</a>
 						<a href="#listas">Listas</a>
 						<a href="#monitores">Quem somos</a>
-						<a href="#">Fale conosco!</a>
+						<a href="#fale-conosco">Fale conosco!</a>
 					</li>
 				</ul>
 			</div>
@@ -41,7 +43,7 @@
 
 	<section class="secao-principal" style="background: url('imagens/teste.jpg'); background-size: cover; z-index: -1; background-attachment: fixed; ">
 		<div class="conteudo" style="width: 100%; height: 100vh; background-color: rgba(0,0,0,.7); z-index: 1">
-			<h1 class="col-md-12 col-sm-10">Monitoria <p></p> Programação 1</h1>
+			<h1 class="col-md-12 col-sm-10 anisme">Monitoria <p></p> Programação 1</h1>
 		</div>
 	</section>
 
@@ -101,16 +103,24 @@
 	</section>
 
 	<section class="secao-listas col-md-12" id="listas">
-		<h2 class="col-md-10">Aguardem - Listas em contrução</h2>
-		<img src="imagens/loading.gif" class="col-md-4" alt="">
+		<h2 class="col-md-10">Listas</h2>
+		<table class="col-md-9" style=" margin: auto; text-align: center">
+			<tr>
+				<td><a href="https://classroom.google.com/u/1/c/MTExOTQ2MzQwMjVa" target="_blank">Lista01 - monitoria 2018</a></td>
+			</tr>
+			<tr>
+				<td><a href="https://classroom.google.com/u/1/c/MTExOTQ2MzQwMjVa" target="_blank
+				">Lista02 - monitoria 2018</a></td>
+			</tr>
+		</table>
 	</section>
 	
 
 	<section class="secao-monitores" id="monitores">
-		<h1>Quem somos?</h1>
-		<div class="hugo col-md-12">
-			<div class="imagem col-md-6">
-				<img src="imagens/hugo(1).jpeg" alt="" style="width: 200px">
+		<h1 class="quem-somos">Quem somos?</h1>
+		<div class="flutuar-esquerda col-md-12">
+			<div class="imagem col-md-3">
+				<img src="imagens/hugo(1).jpeg" class="anime-esquerda" alt="" style="width: 200px">
 			</div>
 			<div class="texto col-md-9">
 				<h3>Hugo Issao Uraga</h3>
@@ -119,25 +129,30 @@
 		</div>
 	</section>
 	
-	<section class="secao-fale-conosco">
+	<section class="secao-fale-conosco" id="fale-conosco">
 		<h3>Tire suas dúvidas com os monitores: </h3>
 		<ul class="container-links-monitores">
 			<li class="lista-bloco">
-				<a href="">Adriano Jorge Braun Vieira Neto (jbvn@cin.ufpe.br)</a>
-				<a href="">Antonio Paulino de Lima Neto (apln2@cin.ufpe.br)</a>
+				<a href="https://www.facebook.com/adrianojbv" target="_blank">Adriano Jorge Braun Vieira Neto (jbvn@cin.ufpe.br)</a>
+				<a href="https://www.facebook.com/aplneto2" targert="_blank">Antonio Paulino de Lima Neto (apln2@cin.ufpe.br)</a>
 				<a href="">Carolina Maria de Paiva Melo (cmpm@cin.ufpe.br)</a>
-				<a href="">Danilo da Rocha Lira Araujo (drla@cin.ufpe.br)</a>
-				<a href="">Gabriel Cavalcanti de Melo (gcm2@cin.ufpe.br)</a>
-				<a href="">Hugo Issao Uraga (hiu@cin.ufpe.br)</a>
+				<a href="https://www.facebook.com/Lanilo.Dira01" target="_blank">Danilo da Rocha Lira Araujo (drla@cin.ufpe.br)</a>
+				<a href="https://www.facebook.com/gabriel.cavalcanti.7370" target="_blank">Gabriel Cavalcanti de Melo (gcm2@cin.ufpe.br)</a>
+				<a href="https://www.facebook.com/hugo.japa.16">Hugo Issao Uraga (hiu@cin.ufpe.br)</a>
 				<a href="">Isabela Ribeiro (micr@cin.ufpe.br)</a>
 				<a href="">Ricarth Lima (rrsl@cin.ufpe.br)</a>
 				<a href="">Vitor Cardim Menezes (vcm3@cin.ufpe.br)</a>
 			</li>
 		</ul>
 	</section>
-
+	
+	<script src="js/index.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  	crossorigin="anonymous"></script>
+  	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 </body>
 </html>

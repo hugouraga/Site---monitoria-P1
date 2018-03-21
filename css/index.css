@@ -18,6 +18,10 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 body {
   line-height: 1;
+
+}
+html, body{
+	overflow-x: hidden;
 }
 ol, ul {
   list-style: none;
@@ -47,14 +51,90 @@ table {
   border-spacing: 0;
 }
 
-@media (){
-
+@media (max-width: 770px){
+	.lista-ul-mobile li a{
+		display: block;
+	}
+	.lista-links-mobile{
+		margin: auto;
+		left: -40px;
+		opacity: 0;
+	}
+	.container-navegador{
+		height: 80px;	
+	}
+	.logo{
+		padding-top: 15px;
+	}
+	.secao-principal h1{
+		font-size: 50px;
+	}
+	.quem-somos{
+		font-size: 22px;
+		text-indent: 50px;
+	}
+	.secao-fale-conosco h3{
+		text-align: center;
+		font-size: 21px;
+		padding-top: 15px;
+		margin-bottom: 20px;
+	}
+	.secao-fale-conosco .lista-bloco{
+		width: 300px;
+		font-size: 10px;
+		text-align: center;
+	}	
+	.secao-fale-conosco ul li a{
+		font-size: 17px;
+	}
+	.texto{
+		margin-left: -20px;
+	}
+}
+@media (min-width: 770px){
+	.logo{
+		padding-top: 5px;
+	}
+	.secao-principal h1{
+		font-size: 70px;
+	}
+	.quem-somos{
+		font-size: 35px;
+		text-indent: 150px;
+	}
+	.secao-fale-conosco h3{
+		margin-left: 150px;
+		margin-top: 50px;
+	}
+	.secao-fale-conosco .lista-bloco{
+		width: 500px;
+	}		
+	.secao-fale-conosco ul li a{
+		font-size: 20px;
+	}
 }
 
+/*classes para animação JQUERY*/
+
+.anime-esquerda{
+	transform: translate3d(-200px,0,0);
+	opacity: 0;
+	transition: 1s;
+}
+.anime-direita{
+	transform: translate3d(200px,0,0);
+	opacity: 0;
+	transition: 1s;	
+}
+.anime-start{
+	transform: translate3d(0,0,0);
+	opacity: 1;
+}
 /*fim do reset*/
 /*configurando estilo da barra de navegação*/
 .container-navegador{
-	background-color: rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,.7);
+	transition: 1s;
 }
 .container-navegador .lista-links{
 	width: 100%;
@@ -62,7 +142,6 @@ table {
 	z-index: 10;
 }
 .logo{
-	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 50px;
 
@@ -71,18 +150,18 @@ table {
 	margin-top: 20px;
 }
 .container-navegador .lista-links li a{
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 8px;
+	padding-right: 8px;
 	padding-top: 7px;
 	padding-bottom: 7px;
-	margin-left:  3px;
-	margin-right: 3px;
+	margin-left:  2px;
+	margin-right: 2px;
 	list-style: none;
 	font-family: "Poppins", Arial;
 	color: white;
 	background-color:  #038EBF;
 	border-radius: 10px;
-	font-size: 20px;
+	font-size: 17px;
 	font-family: 'Quicksand', sans-serif;
 	transition: 1s;
 }
@@ -109,7 +188,6 @@ table {
 	text-align: center;
 	top: 25%;
 	background-color: rgba(0,0,0,.2);
-	font-size: 70px;
 	font-family: 'Francois One', sans-serif;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -140,9 +218,7 @@ table {
 	margin-bottom: 0;
 	padding-bottom: 30px;
 }
-table{
-	border: 1px solid black;
-}
+
 .secao-aulas .table-aulas{
 	margin: auto;
 }	
@@ -174,42 +250,45 @@ table{
 .secao-monitores{
 	background-color: #0A2940;
 	margin-top: 100px;
-	height: 1700px;
+	padding-bottom: 30px;
 }
-.secao-monitores h1{
+.secao-monitores .quem-somos{
 	background-color: #00E5E2;
-	text-indent: 150px;
 	padding-top:  15px;
 	padding-bottom: 15px;
+
 }
-.secao-monitores .hugo{
+.secao-monitores .flutuar-esquerda{
 	margin-top: 40px;
 	display: table;
 	padding-left: 60px;
 }
-.secao-monitores .hugo img{
-	border-radius: 50px;
+.secao-monitores .flutuar-esquerda img{
+	border-radius: 50px;	
 	float: left;
+}
+.secao-monitores .flutuar-direita{
+	margin-top: 40px;
+	display: table;
+}
+.secao-monitores .flutuar-direita div img{
+	border-radius: 50px;
+	float: right;
 }
 .texto{
 	display: table-cell;
-	float: left;
 	text-align: justify;
+	float: left;
 	margin-top: 60px;
 	color : white;
 }
 .secao-fale-conosco{
 	width: 100%;
 }
-.secao-fale-conosco h3{
-	margin-left: 150px;
-	margin-top: 50px;
-}
 .secao-fale-conosco ul li a{
 	display: block;
-	font-size: 20px;
 }
 .secao-fale-conosco .lista-bloco{
-	width: 500px;
+	height: 100%;
 	margin: auto;
 }
